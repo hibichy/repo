@@ -1,0 +1,17 @@
+<!-- edit.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Marketing Item</title>
+</head>
+<body>
+    <h1>Edit Marketing Item</h1>
+    <form method="post" action="{{ url_for('edit', id=item.id) }}">
+        <label>Name:</label><br>
+        <input type="text" name="name" value="{{ item.name }}"><br>
+        <label>Description:</label><br>
+        <textarea name="description">{{ item.description }}</textarea><br>
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marketing Items</title>
+</head>
+<body>
+    <h1>Marketing Items</h1>
+    <ul>
+        {% for item in items %}
+            <li>
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.description }}</p>
+                <form action="{{ url_for('delete', id=item.id) }}" method="post">
+                    <input type="submit" value="Delete">
+                </form>
+                <a href="{{ url_for('edit', id=item.id) }}">Edit</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('add') }}">Add new item</a>
+</body>
+</html>

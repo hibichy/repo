@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>保育施設検索フォーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="search-form">
+        <h1>保育施設検索</h1>
+        <form id="form">
+            <label for="district">地区:</label>
+            <select id="district" name="district">
+                <option value="all">すべて</option>
+                <!-- 地区のオプションをここに追加 -->
+            </select>
+
+            <label for="age">年齢:</label>
+            <select id="age" name="age">
+                <option value="all">すべて</option>
+                <!-- 年齢のオプションをここに追加 -->
+            </select>
+
+            <label for="type">施設タイプ:</label>
+            <select id="type" name="type">
+                <option value="all">すべて</option>
+                <!-- 施設タイプのオプションをここに追加 -->
+            </select>
+
+            <button type="submit">検索</button>
+        </form>
+    </div>
+    <div id="results"></div>
+
+    <script src="/Users/Shibi/chatgpt_app_trial/templates/a/script.js"></script>
+</body>
+</html>
+
+
