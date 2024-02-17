@@ -1,1 +1,4 @@
 これはトライアルです
+aaaa
+koreha
+githubからしたよ
